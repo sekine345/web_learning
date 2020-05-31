@@ -1,0 +1,19 @@
+/* body に対して設定すると、その body の範囲背景色が設定される */
+body {
+    /* background-color: #CCCCCC; */
+    background-image: url(../images/dot.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    background-color: #4587BD;
+
+    /* border-style: solid;
+    border-color: #E2B483;
+    border-width: 10px; */
+    /* 上記を一行で書ける */
+    border : #E2B483 10px solid; 
+
+    color : #FFF;
+}

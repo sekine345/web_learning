@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>アルバイト募集フォーム</title> <!--ブラウザのタブ名-->
+    </head>
+    <body>
+        <h1>アルバイト募集フォーム</h1>
+        <form action="#" method="post">
+            <table border="1">
+                <tr>
+                    <th>
+                        <label for="username">ふりがな*</label>
+                    </th>
+                    <td>
+                        <input type="text" id="username" name="username" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="birthday">生年月日*</label>
+                    </th>
+                    <td>
+                        <input type="date" id="birthday" name="birthday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="gender">性別*</label>
+                    </th>
+                    <td>
+                        <input type="radio" name="gender" value="male" checked required>男性
+                        <input type="radio" name="gender" value="female" required>女性
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="tel">電話番号*</label>
+                    </th>
+                    <td>
+                        <input type="tel" id="tel" name="tel" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">メールアドレス*</label>
+                    </th>
+                    <td>
+                        <input type="email" id="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="noe_job">現在の職業*</label>
+                    </th>
+                    <td>
+                        <select id="now_job" name="now_job" required>
+                            <option value="" selected>選択してください</option>
+                            <option value="gakusei">学生</option>
+                            <option value="arubaito">アルバイト・パートタイム</option>
+                            <option value="seisyain">正社員</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="contents">お問い合わせ内容</label>
+                    </th>
+                    <td>
+                        <textarea id="contents" name="contents"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="送信"> <!--form の内側-->
+        </form>
+        <p name="attention">*の項目は入力必須となります。</p>
+    </bady>
+</html>
